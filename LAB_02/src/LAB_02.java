@@ -3,8 +3,7 @@ import java.util.*;
 
 
 
-
-public class LAB_02 {9
+public class LAB_02 {
 
     public static void main(String[] args) throws FileNotFoundException {
         int rows;
