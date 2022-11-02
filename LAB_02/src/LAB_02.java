@@ -25,17 +25,25 @@ public class LAB_02 {
         }
         System.out.print("\nEnter a placeholder character9: ");
         symbol = sc.nextLine();
+        String symbol2 = "x";
         if (symbol.length() == 1) {
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < rows; j++) {
                     if(j<array[i].length) {
-                        array[i][j] = (char) symbol.codePointAt(0);
+                        if(i % 2 == 1 && j == 0)
+                        {
+                            array[i][j] = (char) symbol.codePointAt(0);
+                        }
+                        else
+                        {
+                            array[i][j] = (char) symbol2.codePointAt(0);
+                        }
                         System.out.print(array[i][j] + "\t");
                         fout.print(array[i][j] + "\t");
                     }
                     else{
-                        System.out.print("o" + "\t");
-                        fout.print("o" + "\t");
+                        System.out.print(" " + "\t");
+                        fout.print(" " + "\t");
                     }
                 }
                 System.out.print("\n");

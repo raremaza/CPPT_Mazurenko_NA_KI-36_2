@@ -1,6 +1,6 @@
 Laptop is switched on!
 Power supply is turned on! Status: true
-Processor start's working : 33
+Processor start's working : 63
 OS start's working! Status: true
 OS type changed to : LINUX
 Laptop is switched off! 
